@@ -40,32 +40,30 @@ function calculateAll() {
     //     return
     // }
 
-    if (!years.value) {
-        document.querySelector('.error-year').style.display = "block"
+    // if (!years.value) {
+    //     document.querySelector('.error-year').style.display = "block"
 
-        return
+    //     return
 
-    }
+    // }
 
-    if (!months.value) {
-        document.querySelector('.error-month').style.display = "block"
+    // if (!months.value) {
+    //     document.querySelector('.error-month').style.display = "block"
 
-        return
-    }
-    if (!days.value) {
-        document.querySelector('.error-day').style.display = "block"
+    //     return
+    // }
+    // if (!days.value) {
+    //     document.querySelector('.error-day').style.display = "block"
 
-        return
+    //     return
 
-    }
+    // }
 
-    function removeall() {
-        document.querySelectorAll('#error').forEach(element => {
-            element.style.display = 'none'
-        });
-    }
-
-
+    // function removeall() {
+    //     document.querySelectorAll('#error').forEach(element => {
+    //         element.style.display = 'none'
+    //     });
+    // }
 
 
     let sum = parseInt(years.value * 365) + parseInt(months.value * 31) + parseInt(days.value);
