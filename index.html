@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/css.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-inner">
+            <h3 class="calc-title">Age in days calculator</h3>
+
+            <p class="calc-text">
+                To find out your age in days, fill in the fields below
+            </p>
+
+            <div class="calc-fields">
+                <div class="">
+                    <label for="#years" class="calc-label">Years</label>
+                    <input type="text" id="years" class="calc-input" />
+                </div>
+
+                <div class="">
+                    <label for="#months" class="calc-label">Months</label>
+                    <input type="text" id="months" class="calc-input" />
+                </div>
+
+                <div class="">
+                    <label for="#days" class="calc-label">Days</label>
+                    <input type="text" id="days" class="calc-input" />
+                </div>
+            </div>
+
+            <button class="calc-btn" id="calcbtn">Calculate It!</button>
+
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
