@@ -24,11 +24,7 @@ function second() {
 
 
 
-let years = document.getElementById("years")
-
-let months = document.getElementById("months")
-
-let days = document.getElementById("days")
+let birthday = document.getElementById("birthday")
 
 function calculateAll() {
 
@@ -66,8 +62,9 @@ function calculateAll() {
     // }
 
 
-    let sum = parseInt(years.value * 365) + parseInt(months.value * 31) + parseInt(days.value);
-    document.getElementById("result").innerHTML = sum
+    let dateStart = Date.parse(birthday.value);
+    let dateEnd = Date.now();
+    document.getElementById("result").innerHTML = Math.round((dateEnd - dateStart) / 86400000);
 
 }
 document.getElementById("calcbtn").addEventListener('click', calculateAll);
